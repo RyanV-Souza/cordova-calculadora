@@ -1,0 +1,18 @@
+/**/
+*{
+  margin:0;
+
+}
+
+.container{
+ width: 99.9%;
+}
+#visor{
+  height: 200px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-size: 40px;
+  text-align: end;
+  letter-spacing: 5px;
+}
