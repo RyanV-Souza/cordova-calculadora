@@ -5,7 +5,9 @@
 }
 
 .container{
- width: 99.9%;
+  margin: 0 auto;
+  width: 960px;
+
 }
 #visor{
   height: 200px;
