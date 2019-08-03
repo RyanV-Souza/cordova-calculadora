@@ -46,3 +46,8 @@ $(document).on("click", ".btnIgual", function(){
   
   $("#visor").val(resultado);
 })
+
+$(document).on("click", ".btnReset", function(){
+
+  $("#visor").val("");
+})
