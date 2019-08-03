@@ -51,3 +51,12 @@ $(document).on("click", ".btnReset", function(){
 
   $("#visor").val("");
 })
+
+$(document).on("click", ".btnCE", function(){
+
+  var visorCalc = $("#visor").val();
+  var diminuirVisor = visorCalc.length-1;
+  var diminuirVisor2 = visorCalc.substring(0, diminuirVisor);
+
+  $("#visor").val(diminuirVisor2);
+})
