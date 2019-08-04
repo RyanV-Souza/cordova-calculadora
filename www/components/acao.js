@@ -1,7 +1,34 @@
+var oper = true;
+
+
 $(document).on("click", ".num", function(){
   visorCalc = $("#visor").val();
-  $("#visor").val(visorCalc + $(this).val());
+  valorTotal2 = visorCalc.split(" ");
+
+  if((valorTotal2[0] == "") ||  (valorTotal2[1] != '√')) {
+     $("#visor").val(visorCalc + $(this).val());
+  }
 })
+
+ $(document).on("click", ".oper", function(){
+   visorCalc = $("#visor").val();
+   valorTotal2 = visorCalc.split(" ");
+
+   if(oper == false){
+     
+     var sinal1 = $(this).val().split("");
+     var sinal = valorTotal2[1];
+     $("#visor").val($("#visor").val().replace(valorTotal2[1], sinal1[1]));
+     
+
+
+
+   } else if ((valorTotal2[0] != "") && (oper == true)){
+        oper = false;
+        $("#visor").val(visorCalc + $(this).val());         
+   }
+
+ });
 
 $(document).on("click", ".btnIgual", function(){
 
@@ -45,10 +72,11 @@ $(document).on("click", ".btnIgual", function(){
   }
   
   $("#visor").val(resultado);
+  oper = true;
 })
 
 $(document).on("click", ".btnReset", function(){
-
+  oper = true;
   $("#visor").val("");
 })
 
@@ -57,6 +85,5 @@ $(document).on("click", ".btnCE", function(){
   var visorCalc = $("#visor").val();
   var diminuirVisor = visorCalc.length-1;
   var diminuirVisor2 = visorCalc.substring(0, diminuirVisor);
-
   $("#visor").val(diminuirVisor2);
 })

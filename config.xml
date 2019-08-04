@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns="http://www.w3.org/ns/widgets" id="com.example.helloworld" version="1.0.0">
-  <name>Calculadora do Ryan</name>
+  <name>Calculadora</name>
   <description>Made with Monaca (http://monaca.mobi)</description>
   <author/>
   <content src="index.html"/>
@@ -59,18 +59,18 @@
   </platform>
   <platform name="android">
     <icon src="/res/android/icon/ldpi.png" density="ldpi"/>
-    <splash src="/res/android/screen/splash-port-xxhdpi.png" density="port-xxhdpi"/>
-    <splash src="/res/android/screen/splash-mdpi.png" density="mdpi"/>
-    <splash src="/res/android/screen/splash-port-xxxhdpi.png" density="port-xxxhdpi"/>
-    <splash src="/res/android/screen/splash-port-ldpi.png" density="port-ldpi"/>
-    <splash src="/res/android/screen/splash-port-mdpi.png" density="port-mdpi"/>
-    <splash src="/res/android/screen/splash-port-hdpi.png" density="port-hdpi"/>
+    <icon src="/res/android/icon/mdpi.png" density="mdpi"/>
+    <icon src="/res/android/icon/hdpi.png" density="hdpi"/>
+    <icon src="/res/android/icon/xhdpi.png" density="xhdpi"/>
     <icon src="/res/android/icon/xxxhdpi.png" density="xxxhdpi"/>
     <icon src="/res/android/icon/xxhdpi.png" density="xxhdpi"/>
-    <icon src="/res/android/icon/xhdpi.png" density="xhdpi"/>
-    <icon src="/res/android/icon/hdpi.png" density="hdpi"/>
-    <icon src="/res/android/icon/mdpi.png" density="mdpi"/>
+    <splash src="/res/android/screen/splash-port-xxhdpi.png" density="port-xxhdpi"/>
     <splash src="/res/android/screen/splash-port-xhdpi.png" density="port-xhdpi"/>
+    <splash src="/res/android/screen/splash-port-hdpi.png" density="port-hdpi"/>
+    <splash src="/res/android/screen/splash-port-mdpi.png" density="port-mdpi"/>
+    <splash src="/res/android/screen/splash-port-ldpi.png" density="port-ldpi"/>
+    <splash src="/res/android/screen/splash-mdpi.png" density="mdpi"/>
+    <splash src="/res/android/screen/splash-port-xxxhdpi.png" density="port-xxxhdpi"/>
   </platform>
   <platform name="electron">
     <icon src="/res/electron/icon/icon_electron_16.png" width="16" height="16"/>
@@ -91,6 +91,6 @@
   <preference name="monaca:AndroidIsPackageNameSeparate" value="false"/>
   <preference name="DisallowOverscroll" value="true"/>
   <preference name="Orientation" value="portrait"/>
-  <preference name="SplashScreenDelay" value="5000"/>
+  <preference name="SplashScreenDelay" value="2000"/>
   <preference name="Fullscreen" value="false"/>
 </widget>

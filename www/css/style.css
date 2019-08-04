@@ -30,6 +30,12 @@ body{
   text-align: end;
   letter-spacing: 5px;
   border: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .oper{
   background-color:#ecebeb;
@@ -48,7 +54,12 @@ button{
   margin: 0;
   padding: 34.3px;
   font-size: 20px;
-
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .barraFerramenta{
@@ -71,8 +82,12 @@ button{
   text-align: end;
   background-color: whitesmoke;
   color:hsl(0, 0%, 44%);
-  cursor: auto;
-  
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .btnCE:hover{
@@ -108,11 +123,11 @@ div.corpoCalc{
   background-color: #2e2c2c;
   color: white;
 }
-.num:hover{
+button:hover{
     text-decoration: none;
     outline: 0;
 }
-.num:focus{
+button:focus{
   text-decoration: none;
   outline: 0;
 }
