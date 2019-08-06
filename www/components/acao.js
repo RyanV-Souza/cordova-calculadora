@@ -1,12 +1,42 @@
 var oper = true;
 
+$(document).on("click", ".negPosi", function(){
+
+  var visor = $("#visor").val();
+  var resultado1 =  visor * -1;
+  $("#visor").val(resultado1);
+
+})
+
+$(document).on("click",".ponto", function(){
+    var visorCalc = $("#visor").val();
+
+    if(visorCalc == ""){
+      $("#visor").val("0.");
+    } else{
+      if(visorCalc.includes(".")){
+        
+      } else{
+        $("#visor").val(visorCalc + ".");
+      }
+    }
+});
+
+$(document).on("click", ".sinalSub", function(){
+  if ($("#visor").val() == ""){
+    $("#visor").val('-');
+    oper = true;
+   
+  }
+})
 
 $(document).on("click", ".num", function(){
   visorCalc = $("#visor").val();
   valorTotal2 = visorCalc.split(" ");
-
+  
   if((valorTotal2[0] == "") ||  (valorTotal2[1] != '√')) {
      $("#visor").val(visorCalc + $(this).val());
+     
   }
 })
 
@@ -18,7 +48,7 @@ $(document).on("click", ".num", function(){
      
      var sinal1 = $(this).val().split("");
      var sinal = valorTotal2[1];
-     $("#visor").val($("#visor").val().replace(valorTotal2[1], sinal1[1]));
+     $("#visor").val($("#visor").val().replace(sinal, sinal1[1]));
      
 
 
@@ -42,6 +72,7 @@ $(document).on("click", ".btnIgual", function(){
 
       case '√':
         var resultado = Math.sqrt(valorTotal2[0]);
+       
         break;
 
       case '^':
